@@ -42,7 +42,7 @@ on:
 
 jobs:
   export-icons:
-    uses: ./.github/workflows/icon-export.yml
+    uses: ./.github/workflows/release.yml
     with:
       preid: ${{ inputs.preid || '' }}
       ref: ${{ inputs.ref || 'main' }}

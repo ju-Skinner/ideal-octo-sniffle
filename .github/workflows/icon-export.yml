@@ -2,6 +2,11 @@ name: 'Run Icon Update'
 
 on:
   workflow_call:
+    outputs:
+      nextVersionType:
+        description: 'The next type of version to release.'
+        value: ${{ jobs.update-icons.outputs.nextVersionType }}
+
     inputs:
       preid:
         description: 'The prerelease id used when doing a prerelease.'
@@ -101,3 +106,7 @@ jobs:
           string: ${{ steps.version-type-info.outputs.VERSION_INFO }}
           separator: ','
           limit: 2
+
+      - name: Output NextVersionType
+        run: |
+          echo "NextVersionType: ${{ steps.split-version-info.outputs._0 }}"

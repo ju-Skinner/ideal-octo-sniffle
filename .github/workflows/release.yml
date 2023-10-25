@@ -1,6 +1,27 @@
 name: "Manual Release"
 
 on:
+  workflow_call:
+    inputs:
+      preid:
+        description: Which prerelease id should be used? This is only needed when a version is "prepatch", "preminor", "premajor", or "prerelease".
+        type: string
+        default: ''
+
+      ref:
+        type: string
+        description: The branch name, tag, or SHA to be checked out. This can also be left blank.
+        default: ''
+
+      tag:
+        type: 'string'
+        required: true
+        description: Which npm tag should this be published to
+
+      version:
+        type: string
+        description: Which version should be published?
+
   workflow_dispatch:
     inputs:
       preid:
@@ -47,15 +68,15 @@ jobs:
       preid: ${{ inputs.preid || '' }}
       ref: ${{ inputs.ref || 'main' }}
       tag: ${{ inputs.tag || 'nightly' }}
-      version: ${{inputs.version || '' }}
+      version: ${{ inputs.version || '' }}
     secrets: inherit
 
-  release-icons:
-    uses: ./.github/workflows/release-icons.yml
+  publish-icons:
+    uses: ./.github/workflows/publish-icons.yml
     needs: export-icons
-    if: ${{ needs.export-icons.outputs.nextVersionType }}
+    if: ${{ needs.export-icons.outputs.nextVersionType != '' }}
     with:
-      preid: ${{ inputs.preid}}
+      preid: ${{ inputs.preid }}
       ref: ${{ inputs.ref }}
       tag: ${{ inputs.tag }}
       version: ${{inputs.version }}
