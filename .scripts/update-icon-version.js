@@ -62,7 +62,7 @@ const run = async (nextVersionType = null, preid='') => {
     ])
 
     const msg = `created: ${created.length}, modified: ${modified.length}, renamed: ${renamed.length}, deleted: ${deleted.length}`
-    await git.commit(`ci(icons): v${iconPkgVersion}, ${msg}`)
+    await git.commit(`feat${nextVersionType === 'major' ? '!' : ''}(icons): v${iconPkgVersion}, ${msg}`)
     await git.tag([`@ju-skinner/ideal-octo-sniffle@${iconPkgVersion}`, '-a', '-m', msg]);
 
     const output = [nextVersionType];
