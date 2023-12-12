@@ -461,6 +461,25 @@
       ]
     },
     {
+      "name": "blog-filled",
+      "category": "site-settings",
+      "tags": [
+        "article",
+        "blog",
+        "blogger",
+        "cms",
+        "content",
+        "copywriting",
+        "documentation",
+        "feed",
+        "marketing",
+        "media",
+        "news",
+        "web",
+        "wordpress"
+      ]
+    },
+    {
       "name": "bold",
       "category": "text-editor",
       "tags": [
@@ -941,6 +960,21 @@
         "subtitles",
         "television",
         "text"
+      ]
+    },
+    {
+      "name": "cloud-upload",
+      "category": "actions",
+      "tags": [
+        "arrow",
+        "cloud",
+        "data",
+        "file",
+        "publish",
+        "save",
+        "share",
+        "storage",
+        "top"
       ]
     },
     {
@@ -1746,6 +1780,34 @@
       ]
     },
     {
+      "name": "flash",
+      "category": "actions",
+      "tags": [
+        "fast",
+        "flash",
+        "light",
+        "lightning",
+        "media",
+        "multimedia",
+        "photo",
+        "weather"
+      ]
+    },
+    {
+      "name": "flash-filled",
+      "category": "actions",
+      "tags": [
+        "fast",
+        "flash",
+        "light",
+        "lightning",
+        "media",
+        "multimedia",
+        "photo",
+        "weather"
+      ]
+    },
+    {
       "name": "folder",
       "category": "features",
       "tags": [
@@ -1822,6 +1884,14 @@
         "server",
         "storage",
         "sync"
+      ]
+    },
+    {
+      "name": "form-filled",
+      "category": "features",
+      "tags": [
+        "filled",
+        "form"
       ]
     },
     {
@@ -1916,6 +1986,19 @@
         "pound",
         "sign",
         "trending"
+      ]
+    },
+    {
+      "name": "hd-video",
+      "category": "features",
+      "tags": [
+        "definition",
+        "hd",
+        "live",
+        "recording",
+        "tech",
+        "technology",
+        "video"
       ]
     },
     {
@@ -2302,7 +2385,7 @@
       "category": "payment-methods",
       "tags": [
         "afterpay",
-        "logo"
+        "buy now pay later"
       ]
     },
     {
@@ -2343,6 +2426,21 @@
         "post",
         "send",
         "write"
+      ]
+    },
+    {
+      "name": "mail-filled",
+      "category": "features",
+      "tags": [
+        "filled",
+        "mail"
+      ]
+    },
+    {
+      "name": "map",
+      "category": "features",
+      "tags": [
+        "map"
       ]
     },
     {
@@ -2723,7 +2821,12 @@
       "name": "pause",
       "category": "actions",
       "tags": [
-        "pause"
+        "button",
+        "control",
+        "media",
+        "multimedia",
+        "pause",
+        "ui"
       ]
     },
     {
@@ -2884,6 +2987,13 @@
         "plugin",
         "tools",
         "widget"
+      ]
+    },
+    {
+      "name": "premium",
+      "category": "features",
+      "tags": [
+        "premium"
       ]
     },
     {
@@ -3230,7 +3340,12 @@
       "name": "scissor",
       "category": "actions",
       "tags": [
-        "scissor"
+        "craft",
+        "cut",
+        "edit",
+        "scissors",
+        "shears",
+        "tool"
       ]
     },
     {
@@ -3731,6 +3846,26 @@
       ]
     },
     {
+      "name": "theme-store-filled",
+      "category": "features",
+      "tags": [
+        "commerce",
+        "commercial",
+        "ecommerce",
+        "food",
+        "home",
+        "mall",
+        "market",
+        "online",
+        "property",
+        "retail",
+        "retailer",
+        "shop",
+        "shopping",
+        "store"
+      ]
+    },
+    {
       "name": "thumbs-down",
       "category": "actions",
       "tags": [
@@ -4201,6 +4336,27 @@
         "travel",
         "web",
         "world"
+      ]
+    },
+    {
+      "name": "wrench",
+      "category": "actions",
+      "tags": [
+        "adjust",
+        "adjustment",
+        "building",
+        "configure",
+        "control",
+        "edit",
+        "filter",
+        "option",
+        "options",
+        "preferences",
+        "settings",
+        "system",
+        "tool",
+        "ui",
+        "wrench"
       ]
     },
     {
