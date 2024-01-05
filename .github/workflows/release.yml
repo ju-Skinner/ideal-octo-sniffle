@@ -74,10 +74,10 @@ jobs:
   publish-icons:
     uses: ./.github/workflows/publish-icons.yml
     needs: export-icons
-    if: ${{ needs.export-icons.outputs.nextVersionType != '' }}
+    if: ${{ inputs.version != '' || needs.export-icons.outputs.nextVersionType != '' }}
     with:
       preid: ${{ inputs.preid }}
       ref: ${{ inputs.ref }}
       tag: ${{ inputs.tag }}
-      version: ${{inputs.version }}
+      version: ${{ inputs.version || needs.export-icons.outputs.nextVersionType }}
     secrets: inherit

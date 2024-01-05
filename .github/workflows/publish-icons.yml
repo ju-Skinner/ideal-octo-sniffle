@@ -43,7 +43,7 @@ jobs:
       - name: Configure user
         run: |
           git config user.name "Automation Bot"
-          git config user.email "ju.skinner@gmail.com"
+          git config user.email "dev+ju.skinner@gmail.com"
 
       - name: Publish Icons
         uses: ./.github/workflows/actions/publish-npm
