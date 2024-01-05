@@ -52,6 +52,12 @@ export class PdsIcon {
     | 'auto'
     | string = 'regular'
 
+  /**
+   *
+   * Specifies the exact `src` of an SVG file to use.
+   */
+  @Prop() src?: string;
+
   private iconSize() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const sizes: { [key: string]: any } = {
