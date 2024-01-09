@@ -5,10 +5,10 @@ import { getName, getUrl, inheritAttributes } from './utils';
 @Component({
   tag: 'pds-icon',
   assetsDirs: ['svg'],
-  styleUrl: 'pds-icon.scss',
+  styleUrl: 'icon.scss',
   shadow: true,
 })
-export class PdsIcon {
+export class Icon {
   private io?: IntersectionObserver;
   private inheritedAttributes: { [k: string]: any } = {}; // eslint-disable-line @typescript-eslint/no-explicit-any
 

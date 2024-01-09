@@ -1,2 +1,2 @@
-export { addIcons } from './components/pds-icon/utils';
+export { addIcons } from './components/icon/utils';
 export type { Components, JSX } from  './components';

@@ -1,5 +1,5 @@
 import { getAssetPath } from '@stencil/core';
-import { PdsIcon } from './pds-icon';
+import { Icon } from './icon';
 
 let CACHED_MAP: Map<string, string>;
 
@@ -66,7 +66,7 @@ export const getSrc = (src: string | undefined) => {
   return null;
 }
 
-export const getUrl = (pdsIcon: PdsIcon) => {
+export const getUrl = (pdsIcon: Icon) => {
   let url = getSrc(pdsIcon.src);
   if (url) {
     return url;

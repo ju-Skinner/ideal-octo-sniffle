@@ -1,10 +1,10 @@
 import { newSpecPage } from '@stencil/core/testing';
-import { PdsIcon } from '../pds-icon';
+import { Icon } from '../icon';
 
 describe('pds-icon', () => {
   it('renders', async () => {
     const { root } = await newSpecPage({
-      components: [PdsIcon],
+      components: [Icon],
       html: '<pds-icon></pds-icon>',
     });
     expect(root).toEqualHtml(`
@@ -18,7 +18,7 @@ describe('pds-icon', () => {
 
   it('renders the correct size when passed', async () => {
     const { root } = await newSpecPage({
-      components: [PdsIcon],
+      components: [Icon],
       html: '<pds-icon size="small"></pds-icon>',
     });
     expect(root).toEqualHtml(`
@@ -32,7 +32,7 @@ describe('pds-icon', () => {
 
   it('allows custom size', async () => {
     const { root } = await newSpecPage({
-      components: [PdsIcon],
+      components: [Icon],
       html: '<pds-icon size="32px"></pds-icon>',
     });
     expect(root).toEqualHtml(`
@@ -46,7 +46,7 @@ describe('pds-icon', () => {
 
   it('renders icon when found', async () => {
     const { root } = await newSpecPage({
-      components: [PdsIcon],
+      components: [Icon],
       html: '<pds-icon name="archive"></pds-icon>',
     });
     expect(root).toEqualHtml(`
@@ -60,7 +60,7 @@ describe('pds-icon', () => {
 
   it('add correct styles when color specified', async () => {
     const { root } = await newSpecPage({
-      components: [PdsIcon],
+      components: [Icon],
       html: '<pds-icon name="archive" color="red"></pds-icon>',
     });
     expect(root).toEqualHtml(`
