@@ -3,7 +3,7 @@ import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'pds-icons',
+  namespace: 'ideal-icons',
   devServer: {
     openBrowser: false,
     port: 7200
@@ -17,7 +17,13 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'single-export-module',
-      dir: './components'
+      dir: './components',
+      copy: [
+        {
+          src: './svg/*.svg', dest: 'components/svg', warn: true
+        }
+      ]
+
     },
     {
       type: 'docs-json',
@@ -30,7 +36,8 @@ export const config: Config = {
     {
       type: 'www',
       copy: [
-        { src: '../changelogs', dest: 'changelogs'}
+        { src: '../changelogs', dest: 'changelogs'},
+        { src:' ./svg/*.svg', dest: './build/svg/'}
       ],
       empty: false,
       serviceWorker: null, // disable service workers

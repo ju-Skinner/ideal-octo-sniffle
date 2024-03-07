@@ -11,7 +11,7 @@ import startCase from 'lodash/startCase';
 const log = console.log;
 const error = chalk.red.bold;
 
-const libraryName = 'pds-icons';
+const libraryName = 'ideal-icons';
 
 /**
  * Builds the icons for distribution
@@ -347,7 +347,7 @@ const createIconPackage = async (version: string, iconDir: string, srcSvgData: A
   ]);
 
   const iconPkgJson = {
-    name: '@ju-skinner/ideal-octo-sniffle/icons',
+    name: '@ju-skinner/ideal-icons/icons',
     version,
     module: 'index.mjs',
     main: 'index.js',
