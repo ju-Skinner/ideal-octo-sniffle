@@ -57,6 +57,7 @@ jobs:
 
       - name: Commmit version bump
         run: |
+          git pull
           git add package.json package-lock.json
           git commit -m "chore: update package lock files for version bump"
           git push --follow-tags
