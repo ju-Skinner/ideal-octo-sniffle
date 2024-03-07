@@ -347,7 +347,7 @@ const createIconPackage = async (version: string, iconDir: string, srcSvgData: A
   ]);
 
   const iconPkgJson = {
-    name: '@ju-skinner/ideal-octo-sniffle/icons',
+    name: '@ju-skinner/ideal-icons/icons',
     version,
     module: 'index.mjs',
     main: 'index.js',
