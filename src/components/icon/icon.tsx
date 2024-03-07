@@ -91,6 +91,7 @@ export class Icon {
     }
   }
 
+  @Watch('icon')
   @Watch('name')
   loadIcon() {
     if (Build.isBrowser && this.isVisible) {
