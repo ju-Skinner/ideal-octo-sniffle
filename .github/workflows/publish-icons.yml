@@ -49,7 +49,7 @@ jobs:
         uses: ./.github/workflows/actions/publish-npm
         with:
           preid: ${{ inputs.preid }}
-          project: 'ideal-octo-sniffle'
+          project: 'ideal-icons'
           tag: ${{ inputs.tag }}
           token: ${{ secrets.NPM_TOKEN }}
           version: ${{ inputs.version }}
