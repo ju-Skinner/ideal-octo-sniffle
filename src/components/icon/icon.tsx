@@ -121,8 +121,6 @@ export class Icon {
       color: this.color,
     }
 
-    console.log('Hello there');
-
     return (
 
       <Host
