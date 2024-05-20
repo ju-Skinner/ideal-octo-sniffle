@@ -1,0 +1,23 @@
+name: "Test for various things"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  read-package-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - run: |
+          echo 'PACKAGE_JSON<<EOF' >> $GITHUB_ENV
+          cat ./package.json >> $GITHUB_ENV
+          echo 'EOF' >> $GITHUB_ENV
+          echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      - run: |
+          echo 'Version: ${{ fromJson(env.PACKAGE_JSON).version }}'
+          echo 'Current Date: ${{ env.CURRENT_DATE}}'
