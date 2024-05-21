@@ -1,7 +1,7 @@
 # Build and Development scripts
 
 # Updating Icons
-The `src/svg` directory is where the icons are downloaded. These are pulled initially from the Figma document, considered the single source of truth. These images are not optimized, as they are just exported from the editor. To get the latest svgs, you will need to run `npx nx ideal-icons:update`. Prior to running you will need to configure `figma-icon-config.json`.
+The `src/svg` directory is where the icons are downloaded. These are pulled initially from the Figma document, considered the single source of truth. These images are not optimized, as they are just exported from the editor. To get the latest svgs, you will need to run `npx nx @ju-skinner/ideal-icons:update`. Prior to running you will need to configure `figma-icon-config.json`.
 
 # Figma Icon Configuration
 The `figma-icon-config.json` should be located in the root directory. You can follow the instructions below to create one if there isn't one currently. The presence of this file is required to pull icons from Figma.
@@ -45,7 +45,7 @@ figma-icon-config.json
 
 Example on how to use environment variables
 ```sh
-FIGMA_ACCESS_TOKEN=[mySampleAccessToken] npx nx run ideal-icons:update
+FIGMA_ACCESS_TOKEN=[mySampleAccessToken] npx nx run @ju-skinner/ideal-icons:update
 ```
 
 # Building locally

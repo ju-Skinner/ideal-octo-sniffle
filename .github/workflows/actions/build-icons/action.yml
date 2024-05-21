@@ -48,7 +48,7 @@ runs:
       shell: bash
 
     - name: Build Icons
-      run: npx nx run ideal-icons:build
+      run: npx nx run @ju-skinner/ideal-icons:build
       shell: bash
 
     - name: Upload Icons Build Archive
