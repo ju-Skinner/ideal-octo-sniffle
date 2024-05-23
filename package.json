@@ -1,6 +1,6 @@
 {
   "name": "@ju-skinner/ideal-icons",
-  "version": "3.2.1-rc.0",
+  "version": "3.2.1-rc.1",
   "license": "MIT",
   "description": "Icon Library",
   "author": "",
@@ -102,4 +102,3 @@
     }
   }
 }
-
