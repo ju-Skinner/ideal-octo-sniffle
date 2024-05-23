@@ -85,6 +85,17 @@ jobs:
         run: npm ci --ignore-scripts
         shell: bash
 
+      - name: Configure user
+        run: |
+          git config user.name "Automation Bot"
+          git config user.email "dev+ju.skinner@gmail.com"
+
+      - name: Prepare NPM Token
+        run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} >> .npmrc
+        shell: bash
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Release
         run: npx nx release
 
