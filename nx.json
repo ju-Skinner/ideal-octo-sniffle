@@ -69,6 +69,7 @@
     "git": {
       "commitMessage": "chore(release): {version}"
     },
+    "releaseTagPattern": "@ju-skinner/ideal-octo-sniffle@{version}",
     "version": {
       "conventionalCommits": true
     }
