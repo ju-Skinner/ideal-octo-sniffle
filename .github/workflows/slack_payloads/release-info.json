@@ -37,7 +37,7 @@
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "*Details*: ${{ env.COMMIT_MESSAGE }}\n\n *Changelog*: ${{ env.CHANGELOG_URL }}"
+				"text": "*Commit Message*: ${{ env.COMMIT_MESSAGE }}\n\n *Release*: ${{ env.RELEASE_URL }}\n\n *Changelog*: ${{ env.CHANGELOG_URL }}"
 			}
 		}
 	]
